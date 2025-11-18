@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Result Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h2>Welcome student!</h2>
+    <p> You Check your Result her...</p>
+    <!-- Button -->
+    <button onclick="showForm()">Check Result...</button>
+
+    <div id="formBox" style="display:none">
+        <h3> Student Details Form</h3>
+
+        <label for="rollNo">Roll Number:</label>
+        <input type="text" id="rollNo" placeholder="Enter Roll No">
+
+        <label for="year">Select Year:</label>
+        <select id="year">
+            <option value="">Select Year</option>
+        </select>
+        <p id="warning" style="color:red; font-size:14px; margin-top:5px;"></p>
+
+        <label>Select Class:
+        </label>
+        <select id="class">
+            <option value="">Select class</option>
+            <option>10th</option>
+            <option>12th</option>
+        </select>
+        <button onclick="submitForm()">Search Result</button>
+        <button onclick="cancelClick()">Cancel</button>
+    </div>
+    <footer>@2025 This is Simple web page!</footer>
+</body>
+
+<script src="script.js">
+</script>
+
+</html>
