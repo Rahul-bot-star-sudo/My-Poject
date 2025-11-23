@@ -1,0 +1,8 @@
+/* Result Box show when user click search result */
+#resultBox {
+        display: none;
+        margin-top: 20px;
+        padding: 15px;
+        border: 2px solid blue;
+        background: #f3f3f3;
+      }

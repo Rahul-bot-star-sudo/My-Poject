@@ -30,3 +30,20 @@ function showForm(){
 function cancelClick(){
     document.getElementById("formBox").style.display="none";
 }
+
+// show the DashBoard
+function submitForm(){
+
+    let roll = document.getElementById("rollNo").value;
+    let marksData = {
+        101: "Rahul-80%"
+    };
+    if (marksData[roll]){
+        document.getElementById("showResult").innerText = "Roll No: " + roll;
+        document.getElementById("resultBox").style.display = "block";
+    } else {
+        document.getElementById("showResult").innerText = "No result found!";
+        document.getElementById("resultBox").style.display = "block";
+
+    }
+}
