@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Calculator from "./components/Calculator";
+import StudentForm from "./components/StudentForm";
 function App() {
     const [massage, setMassage]=useState("");
     useEffect(()=>{
@@ -15,6 +16,7 @@ function App() {
         <a href="/calculator">About Page</a>
 
           <Calculator />
+          <StudentForm />
         </div>
     );
 }
